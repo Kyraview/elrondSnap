@@ -1,11 +1,10 @@
 {
-  "name": "template-typescript-snap",
-  "version": "1.0.0",
-  "private": true,
-  "description": "The 'Hello, world!' of MetaMask Snaps, now written in TypeScript.",
+  "name": "multiversex",
+  "version": "0.0.1",
+  "description": "Elrond blockchain on metamask",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/template-typescript-snap.git"
+    "url": "https://github.com/Kyraview/elrondSnap.git"
   },
   "license": "MIT",
   "main": "src/index.ts",
@@ -43,6 +42,7 @@
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "patch-package": "^6.5.1",
     "prettier": "^2.3.2",
     "prettier-plugin-packagejson": "^2.2.11",
     "rimraf": "^3.0.2",
@@ -54,5 +54,14 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@elrondnetwork/erdjs": "^11.1.2",
+    "@elrondnetwork/erdjs-network-providers": "^1.2.0",
+    "@elrondnetwork/erdjs-walletcore": "^2.1.0",
+    "@metamask/key-tree": "^6.0.0",
+    "bip39": "^3.0.4",
+    "buffer": "^6.0.3",
+    "crypto-js": "^4.1.1"
   }
 }

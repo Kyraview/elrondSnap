@@ -1,24 +1,46 @@
 {
-  "version": "1.0.0",
-  "proposedName": "MetaMask TypeScript Template Snap\n",
-  "description": "An example Snap written in TypeScript.",
+  "version": "0.0.1",
+  "description": "The Elrond blockchain on metamask",
+  "proposedName": "Multiversex",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MetaMask/template-typescript-snap.git"
+    "url": "https://github.com/Kyraview/elrondSnap.git"
   },
   "source": {
-    "shasum": "ZW1yly4ughA3heTnFzWGUMdo0zc87pYqXw2IyqLGbTQ=",
+    "shasum": "Sd5R9Z1OoPuyEm1K19MmTh8qt4l8ecxFAQDW3pl0I3I=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "packageName": "template-typescript-snap",
+        "packageName": "multiversex",
         "registry": "https://registry.npmjs.org/",
         "iconPath": "images/icon.svg"
       }
     }
   },
   "initialPermissions": {
-    "snap_confirm": {}
+    "snap_confirm": {},
+    "endowment:network-access": {},
+    "snap_manageState": {},
+    "endowment:long-running": {},
+    "snap_notify": {},
+    "snap_getBip44Entropy": [
+      {
+        "coinType": 508
+      }
+    ],
+    "endowment:cronjob": {
+      "jobs": [
+        {
+          "expression": "* * * * *",
+          "request": {
+            "method": "cron",
+            "params": {
+              "go": "yes"
+            }
+          }
+        }
+      ]
+    }
   },
   "manifestVersion": "0.1"
 }
