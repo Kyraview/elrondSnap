@@ -11,7 +11,7 @@
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "packageName": "multiversex",
+        "packageName": "multiversx",
         "registry": "https://registry.npmjs.org/",
         "iconPath": "images/icon.svg"
       }
